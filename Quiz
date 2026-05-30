@@ -1,1 +1,50 @@
+  
+    inteiro certas,erradas,pontosfinais,opcaomenu,i = 0,animes,jogos
+    cadeia opcao
 
+    enquanto(i!=1){
+      escreva("------QUIZ: CONHECIMENTOS GERAIS DE ANIMES E JOGOS------\n------(1) Começar Quiz\n------(2) Regras e pontuação\n------(3) Créditos\n------(4) Sair do Quiz\n")
+      leia(opcaomenu)
+
+      escolha(opcaomenu){
+        caso 1:
+
+
+        caso 2: 
+          limpa()
+          escreva("------ REGRAS ------\n-O Quiz consiste em 10 perguntas, 5 de animes e 5 de jogos.\n-Cada pergunta é de uma obra diferente e cada uma possui opções de A a D.\n-Digite a letra da sua resposta correspondente e aperte ENTER.\n------ PONTUAÇÃO ------\n-A pontuação consiste em erros e acertos.\n-Cada erro e acerto é contado para o resultado final.\n")
+          escreva("\n------(1) Menu\n------(2) Sair do Quiz\n")
+          leia(opcaomenu)
+
+          escolha(opcaomenu){
+            caso 1:
+            limpa()
+            pare
+            caso 2:
+            limpa()
+            i = 1
+          }
+          pare
+        caso 3:
+          limpa()
+          escreva("------ CRÉDITOS DA CRIAÇÃO DESSE QUIZ ------\n--- Grupo: Kauã Santos, Vinicius, Ana Coelho\n\n--- Programação: Ana Coelho\n--- Ideia do Quiz: Vinicius\n--- Apresentação principal: Kauã Santos\n\n-Quiz desenvolvido para ativvidade avaliativa do professor Gabriel da matéria de Algoritmo e Lógica de programação.\n")
+          escreva("\n------(1) Menu\n------(2) Sair do Quiz\n")
+          leia(opcaomenu)
+
+          escolha(opcaomenu){
+            caso 1:
+            limpa()
+            pare
+            caso 2:
+            limpa()
+            i = 1
+          }
+          pare
+        caso 4:
+          limpa()
+          i = 1
+      }
+
+    }
+
+   
