@@ -1,6 +1,6 @@
   
-    inteiro certas,erradas,pontosfinais,opcaomenu,i = 0,animes,jogos
-    cadeia opcao
+    inteiro certas=0,erradas=0,pontosfinais=0,opcaomenu,i = 0,animes=0,jogos=0
+    cadeia opcaoquiz
 
     enquanto(i!=1){
       escreva("------QUIZ: CONHECIMENTOS GERAIS DE ANIMES E JOGOS------\n------(1) Começar Quiz\n------(2) Regras e pontuação\n------(3) Créditos\n------(4) Sair do Quiz\n")
@@ -8,11 +8,132 @@
 
       escolha(opcaomenu){
         caso 1:
+          limpa()
+          escreva("------ Pergunta 1: NARUTO ------\n------ Quem foi o sensei do time 7?\nA) Jiraiya\nB) Kakashi\nC) Iruka\nD) Minato\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "B"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+           limpa()
+          escreva("------ Pergunta 2: ONE PIECE ------\n------ Qual é o nome do navio atual dos Chapéus de Palha?\nA) Going Merry\nB) Thousand Sunny\nC) Red Force\nD) Oro Jackson\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "B"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 3: DEMON SLAYER ------\n------ Qual respiração o Tanjiro usa primeiro?\nA) Respiração da Água\nB) Respiração do Fogo\nC) Respiração do Sol\nD) Respiração do Trovão\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "A"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 4: JUJUTSU KAISEN ------\n------ Quem é o recipiente do Sukuna?\nA) Megumi Fushiguro\nB) Satoru Gojo\nC) Yuji Itadori\nD) Nobara Kugisaki\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 5: FULLMETAL ALCHEMIST ------\n------ Qual parte do corpo Edward perdeu ao tentar a transmutação humana?\nA) Braço direito\nB) Perna direita\nC) Braço esquerdo\nD) Perna esquerda\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "D"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 6: MINECRAFT ------\n------ Qual material você precisa para criar um portal do Nether?\nA) Pedra do End\nB) Obsidiana\nC) Netherrack\nD) Quartzo\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "B"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 7: GTA V ------\n------ Qual é o nome do protagonista que mora num trailer no deserto?\nA) Michael\nB) Franklin\nC) Trevor\nD) Lamar\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 8: LEAGUE OF LEGENDS ------\n------ Qual desses campeões é um yordle?\nA) Yasuo\nB) Teemo\nC) Zed\nD) Jhin\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "B"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 9: GOD OF WAR ------\n------ Qual é o nome do filho do Kratos no jogo de 2018?\nA) Atreus\nB) Baldur\nC) Mimir\nD) Tyr\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "A"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 10: RESIDENT EVIL ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ QUIZ FINALIZADO! ------\n")
+          pontosfinais = certas*5-erradas
+          escreva("--- Seus pontos finais foram ",pontosfinais,"\n")
+          se(certas == 10){
+            escreva("-- Uau! Você é o mestre dos Quizes! Você acertou todas as perguntas!\n")
+          }senao se(erradas==10){
+            escreva("-- Ai! Que pena, você errou todas as perguntas do quiz...\n")
+          }
+          se(animes>jogos){
+            escreva("--Parabéns, você acertou mais perguntas de animes! Você é um verdadeiro fã dos animes!\n")
+          }senao se(jogos>animes){
+            escreva("--Parabéns, você acertou mais perguntas de jogos! Você é um verdadeiro fã dos games!\n")
+          }senao{
+            escreva("--Seus conhecimentos são muito equilibrados! Você acertou a mesma quantidade de animes e jogos!\n")
+          }
+          escreva("\n-Acertos: ",certas,"\n-Erros: ",erradas,"\n")
+          escreva("\n---(1)Menu\n---(2)Sair do Quiz\n")
+          leia(opcaomenu)
+
+          escolha(opcaomenu){
+            caso 1:
+            limpa()
+            pare
+            caso 2:
+            limpa()
+            i = 1
+            pare
+          }
+          pare
+          
 
 
         caso 2: 
           limpa()
-          escreva("------ REGRAS ------\n-O Quiz consiste em 10 perguntas, 5 de animes e 5 de jogos.\n-Cada pergunta é de uma obra diferente e cada uma possui opções de A a D.\n-Digite a letra da sua resposta correspondente e aperte ENTER.\n------ PONTUAÇÃO ------\n-A pontuação consiste em erros e acertos.\n-Cada erro e acerto é contado para o resultado final.\n")
+          escreva("------ REGRAS ------\n-O Quiz consiste em 10 perguntas, 5 de animes e 5 de jogos.\n-Cada pergunta é de uma obra diferente e cada uma possui opções de A a D.\n-Digite a letra da sua resposta correspondente e aperte ENTER.\n------ PONTUAÇÃO ------\n-A pontuação consiste em erros e acertos.\n-Cada acerto vale 5 pontos e cada erro tira 1 ponto.\n-Os pontos serão somados para o resultado final.\n")
           escreva("\n------(1) Menu\n------(2) Sair do Quiz\n")
           leia(opcaomenu)
 
@@ -46,5 +167,4 @@
       }
 
     }
-
    
