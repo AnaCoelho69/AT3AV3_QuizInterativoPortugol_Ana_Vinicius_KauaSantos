@@ -1,4 +1,4 @@
-  
+     
     inteiro certas=0,erradas=0,pontosfinais=0,opcaomenu,i = 0,animes=0,jogos=0
     cadeia opcaoquiz
 
@@ -103,18 +103,26 @@
           pontosfinais = certas*5-erradas
           escreva("--- Seus pontos finais foram ",pontosfinais,"\n")
           se(certas == 10){
-            escreva("-- Uau! Você é o mestre dos Quizes! Você acertou todas as perguntas!\n")
+            escreva("-- Uau! Você é o mestre dos Quizzes! Você acertou todas as perguntas!")
+            escreva("\n-Conquista: MESTRE DOS QUIZZES")
           }senao se(erradas==10){
-            escreva("-- Ai! Que pena, você errou todas as perguntas do quiz...\n")
+            escreva("-- Ai! Que pena, você errou todas as perguntas do Quiz...")
+            escreva("\n-Conquista: ERRAR FAZ PARTE")
           }
           se(animes>jogos){
-            escreva("--Parabéns, você acertou mais perguntas de animes! Você é um verdadeiro fã dos animes!\n")
+            escreva("\n--Parabéns, você acertou mais perguntas de animes! Você é um verdadeiro fã dos animes!")
+            escreva("\n-Acertos em animes: ",animes,"\n-Acertos em jogos: ",jogos)
+            escreva("\n\n-Título de Quizzer: MAGO DOS ANIMES\n")
           }senao se(jogos>animes){
-            escreva("--Parabéns, você acertou mais perguntas de jogos! Você é um verdadeiro fã dos games!\n")
+            escreva("--Parabéns, você acertou mais perguntas de jogos! Você é um verdadeiro fã dos games!")
+            escreva("\n-Acertos em jogos: ",jogos,"\n-Acertos em animes: ",animes)
+            escreva("\n\n-Título de Quizzer: PLAYER INCOMPARÁVEL\n")
           }senao{
-            escreva("--Seus conhecimentos são muito equilibrados! Você acertou a mesma quantidade de animes e jogos!\n")
+            escreva("\n--Seus conhecimentos são muito equilibrados! Você acertou a mesma quantidade de animes e jogos!")
+            escreva("\n-Acertos em animes: ",animes,"\n-Acertos em jogos: ",jogos)
+            escreva("\n\n-Título de Quizzer: GEEK EQUILIBRADO\n")
           }
-          escreva("\n-Acertos: ",certas,"\n-Erros: ",erradas,"\n")
+          escreva("\n-Acertos totais: ",certas,"\n-Erros totais: ",erradas,"\n")
           escreva("\n---(1)Menu\n---(2)Sair do Quiz\n")
           leia(opcaomenu)
 
@@ -133,7 +141,7 @@
 
         caso 2: 
           limpa()
-          escreva("------ REGRAS ------\n-O Quiz consiste em 10 perguntas, 5 de animes e 5 de jogos.\n-Cada pergunta é de uma obra diferente e cada uma possui opções de A a D.\n-Digite a letra da sua resposta correspondente e aperte ENTER.\n------ PONTUAÇÃO ------\n-A pontuação consiste em erros e acertos.\n-Cada acerto vale 5 pontos e cada erro tira 1 ponto.\n-Os pontos serão somados para o resultado final.\n")
+          escreva("------ REGRAS ------\n-O Quiz consiste em 20 perguntas, 10 de animes e 10 de jogos.\n-Cada pergunta é de uma obra diferente e cada uma possui opções de A a E.\n-Digite a letra (maiúscula) da sua resposta correspondente e aperte ENTER.\n------ PONTUAÇÃO ------\n-A pontuação consiste em erros e acertos.\n-Cada acerto vale 5 pontos e cada erro tira 1 ponto.\n-Os pontos serão somados para o resultado final.\n--- TERMOS ---\n-Quiz: jogo de perguntas e respostas geralmente sobre entretenimento ou autoconhecimento\n-Quizzer: aquele que joga o Quiz\n-Quizzes: Quiz em plural\n")
           escreva("\n------(1) Menu\n------(2) Sair do Quiz\n")
           leia(opcaomenu)
 
@@ -148,7 +156,7 @@
           pare
         caso 3:
           limpa()
-          escreva("------ CRÉDITOS DA CRIAÇÃO DESSE QUIZ ------\n--- Grupo: Kauã Santos, Vinicius, Ana Coelho\n\n--- Programação: Ana Coelho\n--- Ideia do Quiz: Vinicius\n--- Apresentação principal: Kauã Santos\n\n-Quiz desenvolvido para ativvidade avaliativa do professor Gabriel da matéria de Algoritmo e Lógica de programação.\n")
+          escreva("------ CRÉDITOS DA CRIAÇÃO DESSE QUIZ ------\n--- Grupo: Kauã Santos, Vinicius, Ana Coelho\n\n--- Programação: Ana Coelho\n--- Ideia do Quiz: Vinicius\n--- Apresentação principal: Kauã Santos\n\n-Quiz desenvolvido para atividade avaliativa do professor Gabriel da matéria de Algoritmo e Lógica de programação.\n")
           escreva("\n------(1) Menu\n------(2) Sair do Quiz\n")
           leia(opcaomenu)
 
@@ -167,4 +175,3 @@
       }
 
     }
-   
