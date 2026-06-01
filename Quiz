@@ -1,4 +1,4 @@
-     
+           
     inteiro certas=0,erradas=0,pontosfinais=0,opcaomenu,i = 0,animes=0,jogos=0
     cadeia opcaoquiz
 
@@ -117,7 +117,7 @@
             escreva("--Parabéns, você acertou mais perguntas de jogos! Você é um verdadeiro fã dos games!")
             escreva("\n-Acertos em jogos: ",jogos,"\n-Acertos em animes: ",animes)
             escreva("\n\n-Título de Quizzer: PLAYER INCOMPARÁVEL\n")
-          }senao{
+          }senao se(animes == jogos e animes !=0 e jogos !=0){
             escreva("\n--Seus conhecimentos são muito equilibrados! Você acertou a mesma quantidade de animes e jogos!")
             escreva("\n-Acertos em animes: ",animes,"\n-Acertos em jogos: ",jogos)
             escreva("\n\n-Título de Quizzer: GEEK EQUILIBRADO\n")
