@@ -1,4 +1,4 @@
-           
+  
     inteiro certas=0,erradas=0,pontosfinais=0,opcaomenu,i = 0,animes=0,jogos=0
     cadeia opcaoquiz
 
@@ -9,7 +9,7 @@
       escolha(opcaomenu){
         caso 1:
           limpa()
-          escreva("------ Pergunta 1: NARUTO ------\n------ Quem foi o sensei do time 7?\nA) Jiraiya\nB) Kakashi\nC) Iruka\nD) Minato\n")
+          escreva("------ Pergunta 1: NARUTO ------\n------ Quem foi o sensei do time 7?\nA) Jiraiya\nB) Kakashi\nC) Iruka\nD) Minato\nE) Itachi\n")
           leia(opcaoquiz)
           se(opcaoquiz == "B"){
             certas = certas+1
@@ -18,7 +18,7 @@
             erradas = erradas+1
           }
            limpa()
-          escreva("------ Pergunta 2: ONE PIECE ------\n------ Qual é o nome do navio atual dos Chapéus de Palha?\nA) Going Merry\nB) Thousand Sunny\nC) Red Force\nD) Oro Jackson\n")
+          escreva("------ Pergunta 2: ONE PIECE ------\n------ Qual é o nome do navio atual dos Chapéus de Palha?\nA) Going Merry\nB) Thousand Sunny\nC) Red Force\nD) Oro Jackson\nE) Red sunny\n")
           leia(opcaoquiz)
           se(opcaoquiz == "B"){
             certas = certas+1
@@ -27,7 +27,7 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 3: DEMON SLAYER ------\n------ Qual respiração o Tanjiro usa primeiro?\nA) Respiração da Água\nB) Respiração do Fogo\nC) Respiração do Sol\nD) Respiração do Trovão\n")
+          escreva("------ Pergunta 3: DEMON SLAYER ------\n------ Qual respiração o Tanjiro usa primeiro?\nA) Respiração da Água\nB) Respiração do Fogo\nC) Respiração do Sol\nD) Respiração do Trovão\nE) Respiração do ar\n")
           leia(opcaoquiz)
           se(opcaoquiz == "A"){
             certas = certas+1
@@ -36,7 +36,7 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 4: JUJUTSU KAISEN ------\n------ Quem é o recipiente do Sukuna?\nA) Megumi Fushiguro\nB) Satoru Gojo\nC) Yuji Itadori\nD) Nobara Kugisaki\n")
+          escreva("------ Pergunta 4: JUJUTSU KAISEN ------\n------ Quem é o recipiente do Sukuna?\nA) Megumi Fushiguro\nB) Satoru Gojo\nC) Yuji Itadori\nD) Nobara Kugisaki\nE) Geto\n")
           leia(opcaoquiz)
           se(opcaoquiz == "C"){
             certas = certas+1
@@ -45,7 +45,7 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 5: FULLMETAL ALCHEMIST ------\n------ Qual parte do corpo Edward perdeu ao tentar a transmutação humana?\nA) Braço direito\nB) Perna direita\nC) Braço esquerdo\nD) Perna esquerda\n")
+          escreva("------ Pergunta 5: FULLMETAL ALCHEMIST ------\n------ Qual parte do corpo Edward perdeu ao tentar a transmutação humana?\nA) Braço direito\nB) Perna direita\nC) Braço esquerdo\nD) Perna esquerda\nE) Olho direito\n")
           leia(opcaoquiz)
           se(opcaoquiz == "D"){
             certas = certas+1
@@ -54,7 +54,7 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 6: MINECRAFT ------\n------ Qual material você precisa para criar um portal do Nether?\nA) Pedra do End\nB) Obsidiana\nC) Netherrack\nD) Quartzo\n")
+          escreva("------ Pergunta 6: MINECRAFT ------\n------ Qual material você precisa para criar um portal do Nether?\nA) Pedra do End\nB) Obsidiana\nC) Netherrack\nD) Quartzo\nE) Areia\n")
           leia(opcaoquiz)
           se(opcaoquiz == "B"){
             certas = certas+1
@@ -63,7 +63,7 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 7: GTA V ------\n------ Qual é o nome do protagonista que mora num trailer no deserto?\nA) Michael\nB) Franklin\nC) Trevor\nD) Lamar\n")
+          escreva("------ Pergunta 7: GTA V ------\n------ Qual é o nome do protagonista que mora num trailer no deserto?\nA) Michael\nB) Franklin\nC) Trevor\nD) Lamar\nE) David\n")
           leia(opcaoquiz)
           se(opcaoquiz == "C"){
             certas = certas+1
@@ -72,7 +72,7 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 8: LEAGUE OF LEGENDS ------\n------ Qual desses campeões é um yordle?\nA) Yasuo\nB) Teemo\nC) Zed\nD) Jhin\n")
+          escreva("------ Pergunta 8: LEAGUE OF LEGENDS ------\n------ Qual desses campeões é um yordle?\nA) Yasuo\nB) Teemo\nC) Zed\nD) Jhin\nE) Yin\n")
           leia(opcaoquiz)
           se(opcaoquiz == "B"){
             certas = certas+1
@@ -81,7 +81,7 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 9: GOD OF WAR ------\n------ Qual é o nome do filho do Kratos no jogo de 2018?\nA) Atreus\nB) Baldur\nC) Mimir\nD) Tyr\n")
+          escreva("------ Pergunta 9: GOD OF WAR ------\n------ Qual é o nome do filho do Kratos no jogo de 2018?\nA) Atreus\nB) Baldur\nC) Mimir\nD) Tyr\nE) Renir\n")
           leia(opcaoquiz)
           se(opcaoquiz == "A"){
             certas = certas+1
@@ -90,9 +90,99 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 10: RESIDENT EVIL ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\n")
+          escreva("------ Pergunta 10: RESIDENT EVIL ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\nE) T-Industries\n")
           leia(opcaoquiz)
           se(opcaoquiz == "C"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 11: CHAINSAW MAN ------\n------ Qual o demônio que fez o contrato com o Denji?\nA) Demônio do Controle\nB) Demônio da Raposa\nC) Demônio da Motosserra\nD) Demônio Anjo\nE) Demônio do Futuro\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 12: MY HERO ACADEMIA ------\n------ Qual o nome do vilão principal?\nA) Tomura Shigaraki\nB) Bakugo\nC) All Might\nD) Night Eye\nE) All for One\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "E"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 13: DANDADAN ------\n------ Qual entidade compartilha poder com o Okarun?\nA) Mau Olhado\nB) Serpo\nC) Vovó Turbo\nD) Espírito do espelho\nE) Dancarina\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 14: FRIEREN ------\n------ Qual é o trio principal?\nA) Frieren, Sein, Himmel\nB) Frieren, Fern, Himmel\nC) Fern, Stark, Serie\nD) Frieren, Stark, Fern\nE) Stark, Sein, Serie\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "D"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 15: OS CAVALEIROS DO ZODÍACO ------\n------ Quem é o irmão de Shun de Andrômeda?\nA) Ikki de Libra\nB) Seya de Pégaso\nC) Shiryu de Dragão\nD) Ikki de Fênix\nE) Seya de Sagitário\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "D"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 16: OMORI ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\nE) T-Industries\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 17: ROBLOX ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\nE) T-Industries\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 18: GENSHIN IMPACT ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\nE) T-Industries\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 19: RED DEAD REDEMPTION ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\nE) T-Industries\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 20: BRAWL STARS ------\n------ Qual foi o 100 personagem lançado?\nA) Sirius\nB) Jacky\nC) Kelly\nD) Ken\nE) Gus\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "A"){
             certas = certas+1
             jogos = jogos+1
           }senao{
@@ -175,3 +265,4 @@
       }
 
     }
+    
