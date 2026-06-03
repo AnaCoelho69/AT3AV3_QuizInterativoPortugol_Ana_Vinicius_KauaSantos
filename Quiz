@@ -1,9 +1,13 @@
-  
-    inteiro certas=0,erradas=0,pontosfinais=0,opcaomenu,i = 0,animes=0,jogos=0
-    cadeia opcaoquiz
+    
+    inteiro certas=0,erradas=0,pontosfinais=0,opcaomenu,i = 0,animes=0,jogos=0,quizfinalizado = 0
+    cadeia opcaoquiz,titulos,conquistas
 
     enquanto(i!=1){
+      limpa()
       escreva("------QUIZ: CONHECIMENTOS GERAIS DE ANIMES E JOGOS------\n------(1) Começar Quiz\n------(2) Regras e pontuação\n------(3) Créditos\n------(4) Sair do Quiz\n")
+      se(quizfinalizado >= 1){
+        escreva("------(5) Pontuação atual\n")
+      }senao{}
       leia(opcaomenu)
 
       escolha(opcaomenu){
@@ -36,7 +40,7 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 4: JUJUTSU KAISEN ------\n------ Quem é o recipiente do Sukuna?\nA) Megumi Fushiguro\nB) Satoru Gojo\nC) Yuji Itadori\nD) Nobara Kugisaki\nE) Geto\n")
+          escreva("------ Pergunta 4: JUJUTSU KAISEN ------\n------ Quem é o recipiente do Sukuna?\nA) Megumi Fushiguro\nB) Satoru Gojo\nC) Yuji Itadori\nD) Nobara Kugisaki\nE) Suguru Geto\n")
           leia(opcaoquiz)
           se(opcaoquiz == "C"){
             certas = certas+1
@@ -99,7 +103,7 @@
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 11: CHAINSAW MAN ------\n------ Qual o demônio que fez o contrato com o Denji?\nA) Demônio do Controle\nB) Demônio da Raposa\nC) Demônio da Motosserra\nD) Demônio Anjo\nE) Demônio do Futuro\n")
+          escreva("------ Pergunta 11: CHAINSAW MAN ------\n------ Qual o demônio que fez o contrato com o Denji?\nA) Makima\nB) Kon\nC) Pochita\nD) Sawatari\nE) Power\n")
           leia(opcaoquiz)
           se(opcaoquiz == "C"){
             certas = certas+1
@@ -110,77 +114,68 @@
           limpa()
           escreva("------ Pergunta 12: MY HERO ACADEMIA ------\n------ Qual o nome do vilão principal?\nA) Tomura Shigaraki\nB) Bakugo\nC) All Might\nD) Night Eye\nE) All for One\n")
           leia(opcaoquiz)
+          se(opcaoquiz == "A"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 13: DANDADAN ------\n------ Qual entidade compartilha poder com o Okarun?\nA) Olho Maligno\nB) Serpoianos\nC) Velha Turbo\nD) Reiko Kashima\nE) Sedosa Acrobática\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "C"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 14: FRIEREN ------\n------ Qual é o trio principal?\nA) Frieren, Sein, Heiter\nB) Frieren, Flamme, Himmel\nC) Fern, Stark, Serie\nD) Frieren, Stark, Fern\nE) Stark, Eisen, Serie\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "D"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 15: OS CAVALEIROS DO ZODÍACO ------\n------ Quem é o irmão de Shun de Andrômeda?\nA) Hyoga de Cisne\nB) Seya de Pégaso\nC) Shiryu de Dragão\nD) Ikki de Fênix\nE) Jabu de Unicórnio\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "D"){
+            certas = certas+1
+            animes = animes+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 16: OMORI ------\n------ Qual o nome real do protagonista?\nA) Kel\nB) Sunny\nC) Omori\nD) Hero\nE) Basil\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "B"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 17: ROBLOX ------\n------ Qual o jogo mais popular dentro do Roblox?\nA) Blox Fruits\nB) Adopt Me!\nC) Murder Mystery 2\nD) Brookhaven RP\nE) 99 Noites na Floresta\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "D"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          escreva("------ Pergunta 18: GENSHIN IMPACT ------\n------ Qual o primeiro Arconte que aparece?\nA) Beelzebul\nB) Focalors\nC) Morax\nD) Kusanali\nE) Barbatos\n")
+          leia(opcaoquiz)
           se(opcaoquiz == "E"){
             certas = certas+1
-            animes = animes+1
-          }senao{
-            erradas = erradas+1
-          }
-          limpa()
-          escreva("------ Pergunta 13: DANDADAN ------\n------ Qual entidade compartilha poder com o Okarun?\nA) Mau Olhado\nB) Serpo\nC) Vovó Turbo\nD) Espírito do espelho\nE) Dancarina\n")
-          leia(opcaoquiz)
-          se(opcaoquiz == "C"){
-            certas = certas+1
-            animes = animes+1
-          }senao{
-            erradas = erradas+1
-          }
-          limpa()
-          escreva("------ Pergunta 14: FRIEREN ------\n------ Qual é o trio principal?\nA) Frieren, Sein, Himmel\nB) Frieren, Fern, Himmel\nC) Fern, Stark, Serie\nD) Frieren, Stark, Fern\nE) Stark, Sein, Serie\n")
-          leia(opcaoquiz)
-          se(opcaoquiz == "D"){
-            certas = certas+1
-            animes = animes+1
-          }senao{
-            erradas = erradas+1
-          }
-          limpa()
-          escreva("------ Pergunta 15: OS CAVALEIROS DO ZODÍACO ------\n------ Quem é o irmão de Shun de Andrômeda?\nA) Ikki de Libra\nB) Seya de Pégaso\nC) Shiryu de Dragão\nD) Ikki de Fênix\nE) Seya de Sagitário\n")
-          leia(opcaoquiz)
-          se(opcaoquiz == "D"){
-            certas = certas+1
-            animes = animes+1
-          }senao{
-            erradas = erradas+1
-          }
-          limpa()
-          escreva("------ Pergunta 16: OMORI ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\nE) T-Industries\n")
-          leia(opcaoquiz)
-          se(opcaoquiz == "C"){
-            certas = certas+1
             jogos = jogos+1
           }senao{
             erradas = erradas+1
           }
           limpa()
-          escreva("------ Pergunta 17: ROBLOX ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\nE) T-Industries\n")
-          leia(opcaoquiz)
-          se(opcaoquiz == "C"){
-            certas = certas+1
-            jogos = jogos+1
-          }senao{
-            erradas = erradas+1
-          }
-          limpa()
-          escreva("------ Pergunta 18: GENSHIN IMPACT ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\nE) T-Industries\n")
-          leia(opcaoquiz)
-          se(opcaoquiz == "C"){
-            certas = certas+1
-            jogos = jogos+1
-          }senao{
-            erradas = erradas+1
-          }
-          limpa()
-          escreva("------ Pergunta 19: RED DEAD REDEMPTION ------\n------ Qual empresa criou o T-Virus?\nA) Neo Umbrella\nB) Tricell\nC) Umbrella Corporation\nD) FBC\nE) T-Industries\n")
-          leia(opcaoquiz)
-          se(opcaoquiz == "C"){
-            certas = certas+1
-            jogos = jogos+1
-          }senao{
-            erradas = erradas+1
-          }
-          limpa()
-          escreva("------ Pergunta 20: BRAWL STARS ------\n------ Qual foi o 100 personagem lançado?\nA) Sirius\nB) Jacky\nC) Kelly\nD) Ken\nE) Gus\n")
+          escreva("------ Pergunta 19: RED DEAD REDEMPTION 2 ------\n------ Qual o nome do protagonista principal?\nA) Arthur Morgan\nB) Dutch van der Linde\nC) Micah Bell\nD) Hosea Matthews\nE) John Marston\n")
           leia(opcaoquiz)
           se(opcaoquiz == "A"){
             certas = certas+1
@@ -189,31 +184,52 @@
             erradas = erradas+1
           }
           limpa()
+          escreva("------ Pergunta 20: BRAWL STARS ------\n------ Qual foi o 100 personagem lançado?\nA) Kelly\nB) El Primo\nC) Ally\nD) Ken\nE) Sirius\n")
+          leia(opcaoquiz)
+          se(opcaoquiz == "E"){
+            certas = certas+1
+            jogos = jogos+1
+          }senao{
+            erradas = erradas+1
+          }
+          limpa()
+          se(quizfinalizado == 0){
+            escreva("-Conquista: O MUNDO DOS QUIZZES\n-Título: NOVATO\n")
+            conquistas = "O MUNDO DOS QUIZZES"
+            titulos = "NOVATO"
+
+          }senao{}
           escreva("------ QUIZ FINALIZADO! ------\n")
+          quizfinalizado = quizfinalizado+1
           pontosfinais = certas*5-erradas
           escreva("--- Seus pontos finais foram ",pontosfinais,"\n")
-          se(certas == 10){
+          se(pontosfinais == 100){
             escreva("-- Uau! Você é o mestre dos Quizzes! Você acertou todas as perguntas!")
             escreva("\n-Conquista: MESTRE DOS QUIZZES")
-          }senao se(erradas==10){
+            conquistas = conquistas + ", MESTRE DOS QUIZZES"
+          }senao se(pontosfinais == -20){
             escreva("-- Ai! Que pena, você errou todas as perguntas do Quiz...")
             escreva("\n-Conquista: ERRAR FAZ PARTE")
+            conquistas = conquistas + ", ERRAR FAZ PARTE"
           }
           se(animes>jogos){
             escreva("\n--Parabéns, você acertou mais perguntas de animes! Você é um verdadeiro fã dos animes!")
             escreva("\n-Acertos em animes: ",animes,"\n-Acertos em jogos: ",jogos)
             escreva("\n\n-Título de Quizzer: MAGO DOS ANIMES\n")
+            titulos = titulos + ", MAGO DOS ANIMES" 
           }senao se(jogos>animes){
             escreva("--Parabéns, você acertou mais perguntas de jogos! Você é um verdadeiro fã dos games!")
             escreva("\n-Acertos em jogos: ",jogos,"\n-Acertos em animes: ",animes)
             escreva("\n\n-Título de Quizzer: PLAYER INCOMPARÁVEL\n")
+            titulos = titulos + ", PLAYER INCOMPARÁVEL"
           }senao se(animes == jogos e animes !=0 e jogos !=0){
             escreva("\n--Seus conhecimentos são muito equilibrados! Você acertou a mesma quantidade de animes e jogos!")
             escreva("\n-Acertos em animes: ",animes,"\n-Acertos em jogos: ",jogos)
             escreva("\n\n-Título de Quizzer: GEEK EQUILIBRADO\n")
+            titulos = titulos + ", GEEK EQUILIBRADO"
           }
           escreva("\n-Acertos totais: ",certas,"\n-Erros totais: ",erradas,"\n")
-          escreva("\n---(1)Menu\n---(2)Sair do Quiz\n")
+          escreva("\n---(1) Menu\n---(2) Gabarito\n---(3) Sair do Quiz\n")
           leia(opcaomenu)
 
           escolha(opcaomenu){
@@ -221,6 +237,22 @@
             limpa()
             pare
             caso 2:
+            limpa()
+            escreva("- P.1: B - P.2: B - P.3: A - P.4: C - P.5: D\n- P.6: B - P.7: C - P.8: B - P.9: A - P.10: C\n- P.11: C - P.12: A - P.13: C - P.14: D - P.15: D\n- P.16: B - P.17: D - P.18: E - P.19: A - P.20: E")
+            escreva("\n\n---(1) Menu\n---(2) Sair do Quiz\n")
+            leia(opcaomenu)
+              escolha(opcaomenu){
+                caso 1:
+                  limpa()
+                  pare
+                caso 2:
+                  limpa()
+                  i = 1
+                  pare
+
+              }
+            pare
+            caso 3:
             limpa()
             i = 1
             pare
@@ -262,7 +294,25 @@
         caso 4:
           limpa()
           i = 1
+        caso 5:
+          se(quizfinalizado >= 1){
+            limpa()
+            escreva("------ STATUS ATUAL ------\n--- Última pontuação: ",pontosfinais,"\n--- Conquistas: ",conquistas,"\n--- Títulos: ",titulos,"\n--- Vezes jogadas: ", quizfinalizado,"\n")
+            escreva("\n------(1) Menu\n------(2) Sair do Quiz\n")
+            leia(opcaomenu)
+
+          escolha(opcaomenu){
+            caso 1:
+            limpa()
+            pare
+            caso 2:
+            limpa()
+            i = 1
+          }
+          pare
+          }senao{}
       }
 
     }
+    
     
